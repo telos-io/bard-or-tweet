@@ -2,45 +2,58 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#tweet{
-  border:1px solid black;
-  float:right;
-  //width:66%;
-  padding-left:5px;
+body {
+  background-color: #efefef!important;
 }
 
 #bard{
   float:left;
-  border:1px solid black;
-  // padding-left:48px;
-  // padding-right:48px;
-  margin:auto;
+}
+
+#tweet{
+  float:right;
+  padding:20px;
 }
 
 .button{
   width:200px;
   background-color:green;
   font-size:24px;
-  margin:auto;
+  text-align: center;
 }
 
-html, body {
-  height: 100%;
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 
-#wrap {
-  min-height: 100%;
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
 }
 
-#main {
-  overflow:auto;
-  padding-bottom:150px; /* this needs to be bigger than footer height*/
+/*
+ * Styles copied from the Grid example to make grid rows & columns visible.
+ */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.footer {
-  position: relative;
-  margin-top: -150px; /* negative value of footer height */
-  height: 150px;
-  clear:both;
-  padding-top:20px;
-} 
+h4 {
+  margin-top: 25px;
+}
+.row {
+  margin-bottom: 20px;
+}
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}

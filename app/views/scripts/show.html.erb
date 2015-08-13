@@ -1,12 +1,13 @@
-<div id="bard" class="col-md-4">
-  <%= image_tag "shakespeare.jpg", class: "img-responsive" %>
-</div>
-<div id="tweet" class="col-md-8">
-  <H2 id="script"></H2>
-  <button class="button btn-bard text-center" data-toggle="modal" data-target="#bardModal">Bard</button>
-  <button class="button btn-tweet text-center" data-toggle="modal" data-target="#bardModal">Tweet</button>
-</div>
-
+<div class="row row-eq-height">
+  <div id="bard" class="col-md-4">
+    <%= image_tag "shakespeare.jpg", class: "img-responsive" %>
+  </div>
+  <div id="tweet" class="col-md-8">
+    <H2 id="script" class="vcenter"></H2>
+    <button class="button btn-bard text-center" data-toggle="modal" data-target="#bardModal">Bard</button>
+    <button class="button btn-tweet text-center" data-toggle="modal" data-target="#bardModal">Tweet</button>
+  </div>
+</div><!--row-->
 <div id="bardModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
