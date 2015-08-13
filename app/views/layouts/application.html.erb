@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BardOrTweet</title>
+  <title>Bard or Tweet</title>
   <%= include_gon %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -9,10 +9,18 @@
 </head>
 <body>
 <div class="container">
-  <h1 id="headline">Bard or Tweet</h1>
-  <p id="tagline">Can You Tell the Difference Between Shakespeare and Twitter?</p>
+  <header>
+    <div id="headline"><%= image_tag "BoT-title.png" %></div>
+    <p id="tagline">Can You Tell the Difference Between Shakespeare and Twitter?</p>
+  </header>
 
-  <%= yield %>
-</div>
+    <%= yield %>
+
+  <footer class="footer">
+    <span>Built by <a href="http://telos.io">Telos.io</a> |<span>
+    <span> Inspired by <a href="https://twitter.com/kumailn?lang=en">Kumail Nanjiani</a> |<span>
+    <span> <a href="mailto:kb@telos.io">Take down request</a></span>
+  </footer>
+</div><!--container-->
 </body>
 </html>

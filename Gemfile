@@ -17,7 +17,6 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'randumb'
 gem 'gon'
 gem 'bootstrap-sass'
-gem 'bootstrap-modal-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

@@ -19,7 +19,7 @@ $(document).ready(function(){
       $('.answer').html('Incorrect');
       $('.author').html('Author: ' + author);
     }
-    $("#bardModal").modal("hide");
+    //$("#bardModal").modal("hide");
     location.reload();
   });
 
@@ -32,7 +32,7 @@ $(document).ready(function(){
       $('.answer').html('Incorrect');
       $('.author').html('Author: ' + author);
     }
-    $("#bardModal").modal("hide");
+    //$("#bardModal").modal("hide");
     location.reload();
   });
 
