@@ -2,15 +2,17 @@
 <html>
 <head>
   <title>BardOrTweet</title>
+  <%= include_gon %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="container">
+  <h1 id="headline">Bard or Tweet</h1>
+  <p id="tagline">Can You Tell the Difference Between Shakespeare and Twitter?</p>
 
-  <h1>Bard or Tweet</h1>
-
-<%= yield %>
-
+  <%= yield %>
+</div>
 </body>
 </html>

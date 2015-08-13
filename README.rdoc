@@ -2,7 +2,7 @@ Bard or Tweet
 - test your knowledge of Shakespeare and Twitter
 
 Back End
-x script model, controller, view
+- script model, controller, view
 x push JSON to front end
 
 Front End
