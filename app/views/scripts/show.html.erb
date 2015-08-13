@@ -3,9 +3,11 @@
     <%= image_tag "shakespeare.jpg", class: "img-responsive" %>
   </div>
   <div id="tweet" class="col-md-8">
-    <H2 id="script" class="vcenter"></H2>
-    <button class="button btn-bard text-center" data-toggle="modal" data-target="#bardModal">Bard</button>
-    <button class="button btn-tweet text-center" data-toggle="modal" data-target="#bardModal">Tweet</button>
+    <div class="vcenter">
+      <pre id="width"><h2 id="script"></h2></pre>
+      <button class="button btn-bard text-center" data-toggle="modal" data-target="#bardModal">Bard</button>
+      <button class="button btn-tweet text-center" data-toggle="modal" data-target="#bardModal">Tweet</button>
+    </div>
   </div>
 </div><!--row-->
 <div id="bardModal" class="modal fade" role="dialog">

@@ -22,10 +22,14 @@ body {
   text-align: center;
 }
 
-.vcenter {
+.vcenter{
     display: inline-block;
     vertical-align: middle;
     float: none;
+}
+
+#width{
+  width:600px;
 }
 
 /*
