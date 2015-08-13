@@ -8,19 +8,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container">
-  <header>
-    <div id="headline"><%= image_tag "BoT-title.png" %></div>
-    <p id="tagline">Can You Tell the Difference Between Shakespeare and Twitter?</p>
-  </header>
+  <div class="container">
+    <header>
+      <div>
+        <%= image_tag "BoT-title.png", class: "center-block img-responsive" %>
+      </div>
+      <p class="text-center">Can You Tell the Difference Between Shakespeare and Twitter?</p>
+    </header>
 
-    <%= yield %>
+      <%= yield %>
 
-  <footer class="footer">
-    <span>Built by <a href="http://telos.io">Telos.io</a> |<span>
-    <span> Inspired by <a href="https://twitter.com/kumailn?lang=en">Kumail Nanjiani</a> |<span>
-    <span> <a href="mailto:kb@telos.io">Take down request</a></span>
-  </footer>
-</div><!--container-->
+    <footer class="nav navbar-fixed-bottom text-center">
+      <span>Built by <a href="http://telos.io">Telos.io</a> |<span>
+      <span> Inspired by <a href="https://twitter.com/kumailn?lang=en">Kumail Nanjiani</a> |<span>
+      <span> <a href="mailto:kb@telos.io">Take down request</a></span>
+    </footer>
+
+  </div><!--container-->
 </body>
 </html>

@@ -1,18 +1,17 @@
 <div id="bard" class="col-md-4">
-  <%= image_tag "shakespeare.jpg" %>
+  <%= image_tag "shakespeare.jpg", class: "img-responsive" %>
 </div>
 <div id="tweet" class="col-md-8">
   <H2 id="script"></H2>
-  <button class="button btn-bard" data-toggle="modal" data-target="#bardModal">Bard</button>
-  <button class="button btn-tweet" data-toggle="modal" data-target="#bardModal">Tweet</button>
+  <button class="button btn-bard text-center" data-toggle="modal" data-target="#bardModal">Bard</button>
+  <button class="button btn-tweet text-center" data-toggle="modal" data-target="#bardModal">Tweet</button>
 </div>
 
-<!-- Modal -->
 <div id="bardModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
-    <div class="modal-content">
+   <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Bard or Tweet</h4>
@@ -22,7 +21,7 @@
         <p id="author"></p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">CoolCoolCool</button>
+        <button type="button" class="btn btn-default dismiss" data-dismiss="modal">CoolCoolCool</button>
       </div>
     </div>
 

@@ -2,14 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#headline{
-  text-align:center;
-}
-
-#tagline{
-  text-align:center;
-}
-
 #tweet{
   border:1px solid black;
   float:right;
@@ -31,3 +23,24 @@
   font-size:24px;
   margin:auto;
 }
+
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+} 

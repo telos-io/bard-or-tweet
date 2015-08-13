@@ -8,31 +8,29 @@ $(document).ready(function(){
   var bard = gon.bard;
   var author = gon.author;
 
-  $('#script').html(script);
+  $('#script').html('"' + script + '"');
 
-  $('.btn-bard').on("click", function(){
-    $("#bardModal").modal("show");
-    if( bard === true ){
-      $('.answer').html('Correct');
-      $('.author').html('Author: ' + author);
+  $('.btn-bard').click(function(){
+    if( bard == true ){
+      $('#answer').html('Correct');
+      $('#author').html('Author: ' + author);
     }else{
-      $('.answer').html('Incorrect');
-      $('.author').html('Author: ' + author);
+      $('#answer').html('Shakespeare say "Alas, incorrect, you semi-literate Scaramouche"');
+      $('#author').html('Author: ' + author);
     }
-    //$("#bardModal").modal("hide");
-    location.reload();
   });
 
   $('.btn-tweet').on("click", function(){
-    $("#bardModal").modal("show");
-    if( bard === false ){
-      $('.answer').html('Correct');
-      $('.author').html('Author: ' + author);
+    if( bard == false ){
+      $('#answer').html('Correct');
+      $('#author').html('Author: ' + author);
     }else{
-      $('.answer').html('Incorrect');
-      $('.author').html('Author: ' + author);
+      $('#answer').html('Shakespeare say "Incorrect!  Thou art as fat as butter!"');
+      $('#author').html('Author: ' + author);
     }
-    //$("#bardModal").modal("hide");
+  });
+
+  $(".dismiss").click(function(){
     location.reload();
   });
 
