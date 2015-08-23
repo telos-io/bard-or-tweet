@@ -8,14 +8,14 @@ $(document).ready(function(){
   var bard = gon.bard;
   var author = gon.author;
 
-  $('#script').html('"' + script + '"');
+  $('#script').fadeIn(1000).html('"' + script + '"');
 
   $('.btn-bard').click(function(){
     if( bard == true ){
       $('#answer').html('Correct');
       $('#author').html('Author: ' + author);
     }else{
-      $('#answer').html('Shakespeare say "Alas, incorrect, you semi-literate Scaramouche"');
+      $('#answer').html('Shakespeare says "Alas, incorrect."');
       $('#author').html('Author: ' + author);
     }
   });
@@ -25,13 +25,13 @@ $(document).ready(function(){
       $('#answer').html('Correct');
       $('#author').html('Author: ' + author);
     }else{
-      $('#answer').html('Shakespeare say "Incorrect!  Thou art as fat as butter!"');
+      $('#answer').html('Shakespeare says "Incorrect, damn spot."');
       $('#author').html('Author: ' + author);
     }
   });
 
   $(".dismiss").click(function(){
-    location.reload();
+    location.reload().fadeIn("slow");
   });
 
 });

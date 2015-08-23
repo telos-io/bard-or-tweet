@@ -1,13 +1,11 @@
 <div class="row row-eq-height">
-  <div id="bard" class="col-md-4">
+  <div id="bard" class="col-md-4 col-xs-12">
     <%= image_tag "shakespeare.jpg", class: "img-responsive" %>
   </div>
-  <div id="tweet" class="col-md-8">
-    <div class="vcenter">
-      <pre id="width"><h2 id="script"></h2></pre>
-      <button class="button btn-bard text-center" data-toggle="modal" data-target="#bardModal">Bard</button>
-      <button class="button btn-tweet text-center" data-toggle="modal" data-target="#bardModal">Tweet</button>
-    </div>
+  <div id="tweet" class="col-md-8 col-xs-12">
+      <h3 id="script"></h3>
+      <button class="button btn-bard pagination-centered" data-toggle="modal" data-target="#bardModal">Bard</button>
+      <button class="button btn-tweet pagination-centered" data-toggle="modal" data-target="#bardModal">Tweet</button>
   </div>
 </div><!--row-->
 <div id="bardModal" class="modal fade" role="dialog">
@@ -24,7 +22,7 @@
         <p id="author"></p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default dismiss" data-dismiss="modal">CoolCoolCool</button>
+        <button type="button" class="btn btn-default dismiss" data-dismiss="modal">Once Again Into the Breach!</button>
       </div>
     </div>
 

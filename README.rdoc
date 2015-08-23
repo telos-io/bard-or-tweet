@@ -1,6 +1,11 @@
 Bard or Tweet
 - test your knowledge of Shakespeare and Twitter
 
+https://bard-or-tweet.heroku.com
+
+Features
+
+
 Back End
 - script model, controller, view
 x push JSON to front end
