@@ -8,8 +8,8 @@ Features
 
 Back End
 - script model, controller, view
-x push JSON to front end
+- push JSON to front end
 
 Front End
-x render JSON
-x check JSON with JS function
+- render JSON
+- check JSON with JS function
