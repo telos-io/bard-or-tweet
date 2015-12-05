@@ -20,7 +20,7 @@ $(document).ready(function(){
     }
   });
 
-  $('.btn-tweet').on("click", function(){
+  $('.btn-tweet').click(function(){
     if( bard == false ){
       $('#answer').html('Correct');
       $('#author').html("Author: <a href='https://twitter.com/" + author + "'>" + author + "</a>");
